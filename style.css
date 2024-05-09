@@ -39,7 +39,6 @@ header > nav > ul a {
     font-size: 2rem;
 }
 a:not(header > nav > ul a) {
-    width: 20%;
     margin: 20px 30px;
     display: flex;
     align-items: center;
