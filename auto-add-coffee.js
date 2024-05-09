@@ -5,9 +5,13 @@ const imagePath = "media/extracted/";
 
 // Function to create and add an image element
 function createImage(index) {
+  const link = document.createElement('a');
+  link.href = "https://raw.githubusercontent.com/ILshadow/calling-card/main/media/extracted/(" + (index) + ")/" + (index) + ".jpg";
+  link.target = "_blanck";
   const img = document.createElement('img');
   img.src = imagePath + "(" + index + ")" + "/" + index + ".jpg"; 
-  imageContainer.appendChild(img);
+  link.appendChild(img);
+  imageContainer.appendChild(link);
 }
 
 // Loop to create 100 images (adjust the number as needed)
